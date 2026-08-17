@@ -46,7 +46,7 @@ export function createApp(state: AppState) {
 
   // ── Middleware ──────────────────────────────────────────────────────────────
   app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174', 'http://192.168.1.42:5173', 'http://localhost:3000'],
+    origin: ['http://localhost:5173', 'http://localhost:5174', 'https://maa-kesar.infinityfreeapp.com', 'http://192.168.1.42:5173', 'http://localhost:3000'],
     credentials: true, // ← required for cookies to be sent cross-origin
   }));
   app.use(express.json({ limit: '50mb' }));
